@@ -214,5 +214,3 @@ The infrastructure, email lure, and underlying threat intelligence confirm this 
 3. **Evidence Gaps Limit Dispositions:** You cannot confirm an infection without endpoint telemetry. Always distinguish between a successfully *delivered* attack and a successfully *executed* attack.
 
 ---
-
-**Suggested GitHub Repository Filename:** `2025-03-13-soc338-lummastealer-clickfix-walkthrough.md`
