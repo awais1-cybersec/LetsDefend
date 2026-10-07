@@ -1,5 +1,7 @@
 # SOC338 Lumma Stealer: DLL Side-Loading via Click Fix Phishing — SOC Investigation Walkthrough
 
+> Training-lab write-up. Separate reported observations from hypotheses and recommended actions. Missing source evidence remains unverified; proposed detections and remediation are not claims of deployment.
+
 ## 2. Executive Summary
 
 This investigation details the analysis of a critical data leakage alert (SOC338) triggered on March 13, 2025. The alert identified a targeted phishing campaign aiming to distribute the Lumma Stealer malware to an internal user (`dylan@letsdefend.io`). The attack leveraged a deceptive "Windows 11 Pro" upgrade lure and directed the user to a malicious domain utilizing a "Click Fix" social engineering technique. This tactic tricks users into manually executing a malicious PowerShell script that facilitates DLL side-loading to deploy the infostealer. Because the email was marked as "Allowed" by the gateway, the investigation focused on identifying the threat infrastructure and determining the required steps to validate endpoint execution. The alert is confirmed as a **True Positive**, representing a severe credential theft threat.
@@ -214,3 +216,4 @@ The infrastructure, email lure, and underlying threat intelligence confirm this 
 3. **Evidence Gaps Limit Dispositions:** You cannot confirm an infection without endpoint telemetry. Always distinguish between a successfully *delivered* attack and a successfully *executed* attack.
 
 ---
+
